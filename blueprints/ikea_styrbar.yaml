@@ -81,10 +81,10 @@ max_exceeded: silent
 trigger:
   - platform: state
     entity_id: !input "remote"
-    attribute: action
+    attribute: command
 action:
   - variables:
-      command: "{{ trigger.to_state.state }}"
+      command: "{{ trigger }}"
   - choose:
       - conditions:
           - "{{ command == 'on' }}"
