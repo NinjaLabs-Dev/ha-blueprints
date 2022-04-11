@@ -8,7 +8,7 @@ blueprint:
       name: Remote
       description: IKEA STYRBAR remote to use
       selector:
-        entity:
+        device:
           integration: zha
     button_on:
       name: Brightness up button - short press
